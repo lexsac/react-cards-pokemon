@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-function useFlip(initialVal = false) {
+function useFlip(initialVal = true) {
     // call useState, "reserve piece of state"
     const [value, setValue] = useState(initialVal);
     const flip = () => {
